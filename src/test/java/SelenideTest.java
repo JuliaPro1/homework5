@@ -17,9 +17,9 @@ public class SelenideTest {
     }
 
     @Test
-    void EnterprizeSearch(){
+    void enterpriseSearchTest(){
         open("https://github.com/");
-        //Переход в Меню -> Solutions -> Enterprize
+        //Переход в Меню -> Solutions -> Enterprise
         $(byTagAndText("button","Solutions")).hover();
         $(byTagAndText("a","Enterprises")).click();
         //Проверка загрузки страницы с заголовком "The AI-powered developer platform."
@@ -27,7 +27,7 @@ public class SelenideTest {
     }
 
     @Test
-    void dragDropActions(){
+    void dragDropActionsTest(){
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").shouldHave(text("A"));
         $("#column-b").shouldHave(text("B"));
@@ -39,7 +39,7 @@ public class SelenideTest {
     }
 
     @Test
-    void dragDropElementToElement(){
+    void dragDropElementToElementTest(){
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").shouldHave(text("A"));
         $("#column-b").shouldHave(text("B"));
