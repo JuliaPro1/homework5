@@ -1,8 +1,6 @@
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.DragAndDropOptions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebElement;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byTagAndText;
@@ -12,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SelenideTest {
     @BeforeAll
-    static void beforeAll() {
+    static void setBrowserSize() {
         Configuration.browserSize = "1920x1080";
     }
 
